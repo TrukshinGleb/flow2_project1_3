@@ -47,7 +47,6 @@
 
 .nav-link-footer-current {
     color: #FF7129;
-    margin-left: 357px;
 }
 
 .header-wrapper-contacts {
@@ -373,6 +372,7 @@
 .contact-elements {
     display: flex;
     flex-direction: column;
+    margin-top: 56px;
 }
 
 .contact-title {
@@ -513,7 +513,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(32, 36, 45, 09);
+    background-color: rgba(32, 36, 45, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
