@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" class="css">
+    
 </head>
 <body>
     <header class="page-header">
@@ -94,5 +95,27 @@
             <a href="#" class="security-link">Ochrona danych osobowych</a>
         </div>
     </footer>
+    <div class="popup-containers popup-containers-hidden">
+        <div class="popup">
+            <h2>Obliczyć koszt</h2>
+            <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <form>
+                <p>
+                    Roczne zużycie energii elektrycznej 
+                    <span>42 200 kWh</span>
+                </p> 
+                <div class="select-container">
+                    <select class="custom-select">
+                        <option value="Południowy"></option>
+                        <option value="Wschodni"></option>
+                        <option value="Zachodni"></option>
+                    </select>
+                </div>
+                <button class="button" type="button">Obliczyć</button>
+                <button class="closed" type="button"></button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
