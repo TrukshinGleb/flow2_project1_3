@@ -559,6 +559,7 @@
     background-size: cover;
     width: 100%;
     height: 412px;
+    margin-bottom: 120px;
 }
 
 .instalation-main::before {
@@ -776,10 +777,22 @@
 
 .popup {
     background-color: white;
+    position: relative;
+}
+
+.closed {
+    background-image: url('../img/close-button.png');
+    background-color: transparent;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 21.64px;
+    right: 21.64px;
+    border: none;
 }
 
 .projects-title {
-    font-family: Gilroy;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -845,7 +858,7 @@
     height: auto;
 }
 
-.slider-button-next
+.slider-button-next,
 .slider-button-prev {
     position: absolute;
     width: 56px;
@@ -859,7 +872,7 @@
     background-image: url('../img/arrow.png');
     background-position: center;
     background-repeat: no-repeat;
-    background: #FF7129;
+    background-color: #FF7129;
 }
 
 .slider-button-next {
