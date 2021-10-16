@@ -2,22 +2,29 @@ var buttonElement = document.querySelector('.button')
 var popupContainersElement = document.querySelector('.popup-containers')
 var closedButtonElement = document.querySelector('.closed')
 
-buttonElement.addEventListener(
-    'click', function () {
-        popupContainersElement.classList.remove('popup-containers-hidden')
-    }
-)
+if (buttonElement) {
+    buttonElement.addEventListener(
+        'click', function () {
+            popupContainersElement.classList.remove('popup-containers-hidden')
+        }
+    )
+} 
 
-closedButtonElement.addEventListener(
-    'click', function () {
-        popupContainersElement.classList.add('popup-containers-hidden')
-    }
-) 
-popupContainersElement.addEventListener(
-    'click', function () {
-        popupContainersElement.classList.add('popup-containers-hidden')
-    }
-) 
+if (closedButtonElement) {
+    closedButtonElement.addEventListener(
+        'click', function () {
+            popupContainersElement.classList.add('popup-containers-hidden')
+        }
+    ) 
+}
+
+if (popupContainersElement) {
+    popupContainersElement.addEventListener(
+        'click', function () {
+            popupContainersElement.classList.add('popup-containers-hidden')
+        }
+    ) 
+}
 
 var slider = document.querySelector('.slider-list')
 var slides = document.querySelectorAll('.slider-item')
