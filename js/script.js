@@ -1,4 +1,4 @@
-var buttonElement = document.querySelector('.button') 
+var buttonElement = document.querySelector('.button')
 var popupContainersElement = document.querySelector('.popup-containers')
 var closedButtonElement = document.querySelector('.closed')
 
@@ -22,6 +22,25 @@ if (popupContainersElement) {
     popupContainersElement.addEventListener(
         'click', function () {
             popupContainersElement.classList.add('popup-containers-hidden')
+        }
+    ) 
+}
+
+var callbackButtonElement = document.querySelector('.callback-button')
+var popupCallbackElement = document.querySelector('.popup-callback')
+
+if (callbackButtonElement) {
+    callbackButtonElement.addEventListener(
+        'click', function () {
+            popupCallbackElement.classList.remove('popup-callback-hidden')
+        }
+    )
+} 
+
+if (popupCallbackElement) {
+    popupCallbackElement.addEventListener(
+        'click', function () {
+            popupCallbackElement.classList.add('popup-callback-hidden')
         }
     ) 
 }

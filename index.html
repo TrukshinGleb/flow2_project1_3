@@ -58,9 +58,9 @@
                 Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
                 Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe
                 mają ogromny wpływ na środowisko.</p>
-            <p class="demo-text">To wspaniała wiadomość, ponieważ każdy z nas ma moc wpływania
+            <p class="demo-text-second">To wspaniała wiadomość, ponieważ każdy z nas ma moc wpływania
                 na pozytywne zmiany.</p>
-            <p class="demo-text">Wszyscy jesteśmy odpowiedzialni za stworzenie zrównoważonego
+            <p class="demo-text-second">Wszyscy jesteśmy odpowiedzialni za stworzenie zrównoważonego
                 świata i istnieje tak wiele sposobów, aby to zrobić.
             </p>        
             </div>
@@ -97,22 +97,46 @@
     </footer>
     <div class="popup-containers popup-containers-hidden">
         <div class="popup">
-            <h2>Obliczyć koszt</h2>
-            <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-            <form>
-                <p>
-                    Roczne zużycie energii elektrycznej 
-                    <span>42 200 kWh</span>
-                </p> 
+            <h2 class="popup-head">Obliczyć koszt</h2>
+            <p class="popup-podtext">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <form class="form">
+                <div class="calculate-container">
+                    <p class="popup-calculate"> Roczne zużycie energii elektrycznej </p>
+                    <p class="popup-calculate-result">42 200 kWh</p>
+                </div>
+                <input type="range" class="calculate-input">
+                <div class="over-select">
+                    <p class="popup-calculate">Strona świata</p>
+                    <span class="popup-span">Materiał dachu</span>
+                </div>
                 <div class="select-container">
-                    <select class="custom-select">
+                    <select class="custom-select-first"></select>
+                    <select class="custom-select-second">
                         <option value="Południowy">Południowy</option>
                         <option value="Wschodni">Wschodni</option>
                         <option value="Zachodni">Zachodni</option>
                     </select>
                 </div>
-                <button class="button" type="button">Obliczyć</button>
+                <button class="calculate-button" type="button">Obliczyć</button>
                 <button class="closed" type="button"></button>
+            </form>
+        </div>
+    </div>
+    <div class="popup-callback popup-callback-hidden">
+        <div class="callback">
+            <h2 class="callback-head">Oddzwoń</h2>
+            <p class="popup-podtext">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+            <form class="form">
+                <div class="input-container">
+                    <p><b>Twoje imię</b><br>
+                        <input type="text" size="40">
+                       </p>
+                    <p><b>Telefon</b><br>
+                        <input type="text" size="40">
+                       </p>
+                </div>
+                <button class="callback-button" type="button">Obliczyć</button>
+                <button class="closing" type="button"></button>
             </form>
         </div>
     </div>
