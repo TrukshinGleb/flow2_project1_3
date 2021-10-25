@@ -18,16 +18,9 @@ if (closedButtonElement) {
     ) 
 }
 
-if (popupContainersElement) {
-    popupContainersElement.addEventListener(
-        'click', function () {
-            popupContainersElement.classList.add('popup-containers-hidden')
-        }
-    ) 
-}
-
-var callbackButtonElement = document.querySelector('.callback-button')
+var callbackButtonElement = document.querySelector('.button-footer')
 var popupCallbackElement = document.querySelector('.popup-callback')
+var closingCallbackElement = document.querySelector('.closing')
 
 if (callbackButtonElement) {
     callbackButtonElement.addEventListener(
@@ -37,7 +30,7 @@ if (callbackButtonElement) {
     )
 } 
 
-if (popupCallbackElement) {
+if (closingCallbackElement) {
     popupCallbackElement.addEventListener(
         'click', function () {
             popupCallbackElement.classList.add('popup-callback-hidden')
